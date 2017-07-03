@@ -48,7 +48,7 @@ def update(angle,speed=0):
 def shutdown():
     GPIO.cleanup()
 
-if __name__ == '__main':    
+if __name__ == '__main__':    
     while True:
         i = float(input("Speed:"))
         update(90,throttle_control(i))
